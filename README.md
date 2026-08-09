@@ -2,8 +2,6 @@
 
 A Verilog implementation of a custom 64-bit CPU core — integer ALU, floating-point unit, register file, program counter, and instruction decoder — wrapped in an SoC top level and targeting the Digilent Basys3 (Artix-7) FPGA board.
 
-> The architecture notes below are inferred from the project's module and file names (this repo currently ships the `.xpr` project file, not the Verilog sources themselves) — worth double-checking against the actual RTL and correcting anything that doesn't match.
-
 ## Features
 
 - Custom 64-bit CPU datapath (`cpu_64bit_core`) with instruction decode, ALU, logic unit, and flag generation
