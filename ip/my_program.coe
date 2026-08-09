@@ -1,0 +1,11 @@
+memory_initialization_radix=16;
+memory_initialization_vector=
+00221800, ; ADD: R3 = R1 + R2
+00612020, ; SUB: R4 = R3 - R1
+00682C20, ; OR:  R5 = R3 | R8
+00682C24, ; AND: R6 = R3 & R8
+00682C28, ; XOR: R7 = R3 ^ R8
+00611830, ; SLL: R8 = R1 << 2
+08050000, ; STORE: Save R5 to Memory
+08050004, ; STORE: Save R6 to Memory
+0C000000; ; NOP / END
